@@ -5,7 +5,7 @@ var url = require('url');
 //声明数据库
 var mongoose = require('mongoose');
 //声明数据库链接
-
+//
 mongoose.connect('mongodb://127.0.0.1/car_service');
 //声明调用的模型
 require('../models/Contents');
