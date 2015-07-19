@@ -6,7 +6,7 @@ var url = require('url');
 var mongoose = require('mongoose');
 //声明数据库链接
 
-mongoose.connect('mongodb://10.211.55.3/car_service');
+mongoose.connect('mongodb://127.0.0.1/car_service');
 //声明调用的模型
 require('../models/Contents');
 require('../models/Activitys');
@@ -14,7 +14,7 @@ require('../models/Messages');
 require('../models/Cases');
 require('../models/Products');
 require('../models/Introductions');
-require('../models/Serviceitems');
+require('../models/ServiceItems');
 require('../models/Orders');
 require('../models/Stores');
 require('../models/Users');
@@ -79,7 +79,6 @@ router.post('/activity',function(req,res,next){
   });
   //
 })
-
 //商家介绍－获取数据
 router.get('/introduction',function(req,res,next){
   //
