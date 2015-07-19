@@ -5,15 +5,11 @@ var mongoose = require('mongoose');
 
 var CaseSchema = mongoose.Schema({
 
-    user:[{type:mongoose.Schema.Types.ObjectId,ref:'User'}],
+    user:{type:mongoose.Schema.Types.ObjectId,ref:'User'},
     name:String,
     title:String,
     content:[
-        {
-            desc:String,
-            type:String,
-            file:String
-        }
+        mongoose.model('Content').schema
     ]
     });
 mongoose.model('Case',CaseSchema);

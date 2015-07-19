@@ -3,7 +3,7 @@
  */
 
 var ProductSchema = new mongoose.Schema({
-    user:[{type:mongoose.Schema.Types.ObjectId,ref:'User'}],
+    user:{type:mongoose.Schema.Types.ObjectId,ref:'User'},
     desc:String,
     image:String
 });

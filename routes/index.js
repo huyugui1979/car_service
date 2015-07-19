@@ -195,7 +195,6 @@ router.post('/store',function(req,res,next){
   });
   //
 })
-
 //服务项目 － 保存数据
 router.post('/service',function(req,res,next){
   //
@@ -206,7 +205,6 @@ router.post('/service',function(req,res,next){
   });
   //
 })
-
 router.get('/service',function(req,res,next){
   //
   ServiceItem.find(req.query).exec(function(error,result){
@@ -215,5 +213,4 @@ router.get('/service',function(req,res,next){
   });
   //
 })
-
 module.exports = router;
